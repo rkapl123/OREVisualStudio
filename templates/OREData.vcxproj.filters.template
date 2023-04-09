@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="configuration">
+      <UniqueIdentifier>{ecab533c-e26e-4872-970e-b22949f84306}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="marketdata">
+      <UniqueIdentifier>{d447af73-724f-4cbe-b0ec-d02637d38a33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model">
+      <UniqueIdentifier>{6b362543-416a-4e63-9523-94909a20cfb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="portfolio">
+      <UniqueIdentifier>{dc15951b-6ddd-41a2-9085-9bc3ffbeaca3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utilities">
+      <UniqueIdentifier>{81cb95be-3ece-4f69-8759-2a3b4d022e6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="portfolio\builders">
+      <UniqueIdentifier>{366dc296-9975-4787-a9f4-6e3e3d30a55c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="report">
+      <UniqueIdentifier>{f56268ea-d150-4fb7-b75b-9618e16d7c3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\calibrationinstruments">
+      <UniqueIdentifier>{1fec87df-dbce-4a0c-a47b-9bcc5cec4efe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\inflation">
+      <UniqueIdentifier>{4b38d6b7-ea6f-4969-adba-91114fef3272}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+<IncludeFileTemplate>
+  </ItemGroup>
+</Project>

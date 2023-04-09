@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+ <ItemGroup>
+    <Natvis Include="QuantLib.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="methods">
+      <UniqueIdentifier>{b8aa1a7a-0199-4243-94e9-44c79da50099}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="methods\montecarlo">
+      <UniqueIdentifier>{aea49e67-9408-4620-89d3-037c781cba11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="methods\finitedifferences">
+      <UniqueIdentifier>{31939e69-d4cf-4754-8226-2b55bd65ee25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="methods\lattices">
+      <UniqueIdentifier>{c7ee75dd-b0c1-40c1-b672-eb15b51fb2b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cashflows">
+      <UniqueIdentifier>{7a76183f-0ac9-49e9-a574-d83fa3ca88eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="indexes">
+      <UniqueIdentifier>{0f08b9f0-9002-4f9b-bf66-c9e73d2ca13b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="indexes\ibor">
+      <UniqueIdentifier>{9d53bbc0-3213-471b-9b14-01c9bbef411c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="indexes\swap">
+      <UniqueIdentifier>{1886f7fd-2357-47aa-bc92-84d13b48a913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="indexes\inflation">
+      <UniqueIdentifier>{f4ad9f82-7463-4af1-973a-ab13fddba354}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="instruments">
+      <UniqueIdentifier>{bdda7538-22a4-44ac-925a-6c95afb05c55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="instruments\bonds">
+      <UniqueIdentifier>{692074d7-b624-441f-b7da-a660d59f5fb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math">
+      <UniqueIdentifier>{7c2dcbda-48ea-48eb-bd23-b1d88d45dbc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math\interpolations">
+      <UniqueIdentifier>{b42ab6bf-67e2-4186-8a69-9de38642fe9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math\statistics">
+      <UniqueIdentifier>{c69725ed-ff73-4e74-9777-d3fd2c4b0f48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math\distributions">
+      <UniqueIdentifier>{a591a398-d145-47e3-9d70-3586402ef751}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math\integrals">
+      <UniqueIdentifier>{0235f1b9-babc-41ec-b0c7-ee8ea60090e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math\matrixutilities">
+      <UniqueIdentifier>{37bc9da0-bb2a-4e61-ae73-1fd8cd26b466}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math\randomnumbers">
+      <UniqueIdentifier>{6853f0b6-f5cb-475a-bb31-b7d03ffa0685}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math\solvers1D">
+      <UniqueIdentifier>{627e33e9-8709-415d-b7a8-b6c3f680c241}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math\optimization">
+      <UniqueIdentifier>{d7c675a7-76b5-4ef4-ad8f-e64de99c39c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math\copulas">
+      <UniqueIdentifier>{fe3e871d-733d-4497-9d95-fa5248f1b5ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math\ode">
+      <UniqueIdentifier>{8ee72e86-e0bd-4390-b4ef-8a60dad32991}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="patterns">
+      <UniqueIdentifier>{0a0e9ecd-4c8e-4e72-8195-123ef41301be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="models">
+      <UniqueIdentifier>{483b4555-8ff3-4f29-a747-ef06e274fd73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="models\marketmodels">
+      <UniqueIdentifier>{4df7c636-1015-4420-b49b-d084fd0813db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="models\marketmodels\browniangenerators">
+      <UniqueIdentifier>{73f36670-3ee6-4af8-9a8b-45ca71a8293d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="models\marketmodels\curvestates">
+      <UniqueIdentifier>{88b6dfd9-e5f9-4f0d-8143-ab75b68cf472}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="models\marketmodels\driftcomputation">
+      <UniqueIdentifier>{1e4d1b00-7be4-4b86-b8ab-4e13c7d8d2d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="models\marketmodels\evolvers">
+      <UniqueIdentifier>{6b816a6e-05ec-4faa-9943-83bb71d84e23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="models\marketmodels\evolvers\volprocesses">
+      <UniqueIdentifier>{01775f02-a000-4176-b7ec-d98d70a365b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="models\marketmodels\models">
+      <UniqueIdentifier>{d5ea26ea-a326-48a2-90b8-7f1c8a126a98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="models\marketmodels\products">
+      <UniqueIdentifier>{3a3f097f-0d50-4527-86b5-548bbc1c20cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="models\marketmodels\products\multistep">
+      <UniqueIdentifier>{aa3f5c77-d466-43ab-b063-9be4cd44c900}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="models\marketmodels\products\onestep">
+      <UniqueIdentifier>{f3557c7e-8b6b-486b-acf2-1340ff7431f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="models\marketmodels\products\pathwise">
+      <UniqueIdentifier>{e9089237-fe8c-4d55-914d-52d7d327f3bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="models\marketmodels\correlations">
+      <UniqueIdentifier>{5ba48137-364c-4ea0-8ed4-2345d82d471c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="models\marketmodels\callability">
+      <UniqueIdentifier>{eb617bd5-2e6b-4c09-b151-ee5162072000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="models\marketmodels\pathwisegreeks">
+      <UniqueIdentifier>{89a29868-6250-48c4-9114-49d231bbb022}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="models\shortrate">
+      <UniqueIdentifier>{0b0b5594-c9af-4db2-b1af-6f72ac6418db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="models\shortrate\calibrationhelpers">
+      <UniqueIdentifier>{3f3a5a66-d590-4175-90b3-96cb391e5fad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="models\shortrate\onefactormodels">
+      <UniqueIdentifier>{8b4b44b7-fa7b-4b04-8186-b74a4b4553ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="models\shortrate\twofactorsmodels">
+      <UniqueIdentifier>{146d248f-eca5-4d6e-a41c-56f68851c964}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="models\volatility">
+      <UniqueIdentifier>{b72a4d22-c381-4ed5-b6a3-97285fc789d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="models\equity">
+      <UniqueIdentifier>{1b0ea6af-abd5-4c8d-9ac1-f513efc372fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="termstructures">
+      <UniqueIdentifier>{55f020ff-1b2f-4f56-8194-6fe99d69e9f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="termstructures\volatility">
+      <UniqueIdentifier>{0bf280b6-d895-40ff-b988-65ad2880c1ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="termstructures\volatility\capfloor">
+      <UniqueIdentifier>{abef9afa-8a52-4aa4-919f-9783ff8f1007}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="termstructures\volatility\equityfx">
+      <UniqueIdentifier>{be944554-fbaf-47f3-beee-c441a7e8f1ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="termstructures\volatility\optionlet">
+      <UniqueIdentifier>{88309f41-e501-4c74-90ab-22e8cca7f0ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="termstructures\volatility\swaption">
+      <UniqueIdentifier>{f5650187-c37a-4a98-8a24-8836f0f11324}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="termstructures\volatility\inflation">
+      <UniqueIdentifier>{159ec8ea-6958-4f60-a716-62915d2cef63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="termstructures\yield">
+      <UniqueIdentifier>{539e9341-cf4e-499c-9828-cf406c5c7e4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="termstructures\inflation">
+      <UniqueIdentifier>{e31e697b-bed3-4d0c-b1e0-15747249a105}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="termstructures\credit">
+      <UniqueIdentifier>{af9827f7-274b-43da-a2a2-40fc4c80c194}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utilities">
+      <UniqueIdentifier>{25fb83ed-1731-4cd6-aa3a-d8027a0eca9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="currencies">
+      <UniqueIdentifier>{717cf2d6-0581-4aa8-a21f-34e9700bc89e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="processes">
+      <UniqueIdentifier>{d8199c0f-73e6-47e0-8444-57267a6112c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pricingengines">
+      <UniqueIdentifier>{b134ed97-6567-422a-b13e-21ce2e9abdd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pricingengines\asian">
+      <UniqueIdentifier>{7d2cb293-d738-4289-ba74-fd7445bf6749}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pricingengines\barrier">
+      <UniqueIdentifier>{23b3f559-6e47-4fbe-846d-4dc9002560f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pricingengines\basket">
+      <UniqueIdentifier>{4b67a796-2576-42be-89cc-b751a07e3973}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pricingengines\forward">
+      <UniqueIdentifier>{25671919-a7a3-4197-943c-23a5df4e8146}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pricingengines\quanto">
+      <UniqueIdentifier>{817c0417-9b08-4702-9b00-af51445dce2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pricingengines\vanilla">
+      <UniqueIdentifier>{4c3b4a0c-5a68-4167-8e21-bfaf6b75563b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pricingengines\capfloor">
+      <UniqueIdentifier>{8606a756-ea3a-44ee-a9ed-f5e76761023e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pricingengines\swaption">
+      <UniqueIdentifier>{5b92aca1-b394-4001-83a3-bc2d58fba28f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pricingengines\cliquet">
+      <UniqueIdentifier>{39b63159-982e-48fa-8723-def3612fce0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pricingengines\lookback">
+      <UniqueIdentifier>{3ec47a48-746e-4e8f-ae78-a5e1f154bb71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pricingengines\bond">
+      <UniqueIdentifier>{79361c8f-2a4f-4cae-97b3-b6762c33ff63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pricingengines\swap">
+      <UniqueIdentifier>{147286c4-32fb-4540-9752-f9eb5d165cd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pricingengines\credit">
+      <UniqueIdentifier>{d754981c-0ab8-4c35-bd77-ad78c78e9b41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pricingengines\inflation">
+      <UniqueIdentifier>{083a46bb-a18c-4a14-8d21-baad35f27df5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="quotes">
+      <UniqueIdentifier>{a709110c-73f5-4b2e-b44c-46a909a89b31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="time">
+      <UniqueIdentifier>{36727168-b97c-4f82-aeb7-e397627499a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="time\calendars">
+      <UniqueIdentifier>{d076d7be-7ff0-4df0-829a-73dc1cfaa7ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="time\daycounters">
+      <UniqueIdentifier>{3346f5d8-7c2e-4444-bca0-837abbec52da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="legacy">
+      <UniqueIdentifier>{5eb5dffa-ec4b-4d24-acbd-9c5e7c2fa072}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="legacy\libormarketmodels">
+      <UniqueIdentifier>{41c18bb1-d892-4994-b699-cd644c6421e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental">
+      <UniqueIdentifier>{4eadb3fc-a4ce-4e0c-bfe5-f23777a30a8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\amortizingbonds">
+      <UniqueIdentifier>{101d6cdd-3e77-48cd-8bec-c84a252324f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\averageois">
+      <UniqueIdentifier>{33f1be16-e858-4cfe-ba9c-483609826221}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\barrieroption">
+      <UniqueIdentifier>{aad1cf31-2c29-47a1-9461-ee71b1dd9a6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\basismodels">
+      <UniqueIdentifier>{fceaa051-43f2-4c81-9bf5-a38d88b661ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\callablebonds">
+      <UniqueIdentifier>{1b920d53-9803-4152-8653-c855397066d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\catbonds">
+      <UniqueIdentifier>{38f8ad14-f839-425e-b711-68a9acd361f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\commodities">
+      <UniqueIdentifier>{aae4b1e6-d6bd-44d9-af3d-4e5efcfd0b57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\coupons">
+      <UniqueIdentifier>{d7d44f55-80bf-4af8-9367-5c903022d99e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\credit">
+      <UniqueIdentifier>{ae60e960-e1e8-49f4-9a18-bc976b60f165}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\exoticoptions">
+      <UniqueIdentifier>{7d489132-7d03-49f7-bad4-bde084e20bbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\finitedifferences">
+      <UniqueIdentifier>{d42ff6e1-a70e-4fe7-a35a-db4ca5ef1c95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\fx">
+      <UniqueIdentifier>{936a8947-d2c0-4bdd-95c5-8b52daf92cc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\inflation">
+      <UniqueIdentifier>{c046c970-45d0-4156-b587-ff2bc881bf04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\lattices">
+      <UniqueIdentifier>{aa33a8b9-0ac4-49d9-ad88-a7810d0532dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\math">
+      <UniqueIdentifier>{db6b7309-6e3f-4eb2-bce2-6f45a933a788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\mcbasket">
+      <UniqueIdentifier>{51b20bfb-087c-4623-be3c-647010d4e809}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\models">
+      <UniqueIdentifier>{9eeb0683-3147-4850-9eba-645af86b58e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\processes">
+      <UniqueIdentifier>{fffa1e10-7b29-41f9-a775-b2bb61638f39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\risk">
+      <UniqueIdentifier>{8cc2e654-d55c-41e3-8005-e6222102f717}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\shortrate">
+      <UniqueIdentifier>{e29388ea-045b-43fe-95f7-0973b8537907}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\swaptions">
+      <UniqueIdentifier>{63ee57ce-bf68-4a4a-b5c8-29d11c2a11ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\termstructures">
+      <UniqueIdentifier>{8a1123c5-a617-4cf2-93df-e554735531ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\variancegamma">
+      <UniqueIdentifier>{12b22ebc-4102-4d94-b640-8490b20365b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\varianceoption">
+      <UniqueIdentifier>{8fd699bb-f489-4e96-a998-54b5612a9aa7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\volatility">
+      <UniqueIdentifier>{d18be44d-a78a-4109-a3f8-757c4737d267}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="methods\finitedifferences\meshers">
+      <UniqueIdentifier>{02219e9b-59b0-458f-9937-397f83864a9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="methods\finitedifferences\schemes">
+      <UniqueIdentifier>{209ea670-7502-4ccc-a3fd-5d793608356b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="methods\finitedifferences\operators">
+      <UniqueIdentifier>{8bb09d36-55a0-4496-8e78-989117257790}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="methods\finitedifferences\solvers">
+      <UniqueIdentifier>{5d212607-989f-42d9-ae9d-a54f29d74dfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="methods\finitedifferences\stepconditions">
+      <UniqueIdentifier>{2c4b39a7-b606-4f9f-9df6-70685dbde95f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="methods\finitedifferences\utilities">
+      <UniqueIdentifier>{be723df5-2e58-41de-8071-8d2e2f62410a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\forward">
+      <UniqueIdentifier>{743389ec-4f1b-48ee-98f5-d46f4684b688}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="experimental\asian">
+      <UniqueIdentifier>{0abb3851-b409-4ea6-8e55-120d00a9fcdb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+<IncludeFileTemplate>
+  </ItemGroup>
+</Project>

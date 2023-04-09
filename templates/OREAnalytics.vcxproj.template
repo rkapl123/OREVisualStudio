@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug (static runtime)|Win32">
+      <Configuration>Debug (static runtime)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug (static runtime)|x64">
+      <Configuration>Debug (static runtime)</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release (static runtime)|Win32">
+      <Configuration>Release (static runtime)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release (static runtime)|x64">
+      <Configuration>Release (static runtime)</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(ORE)\OREAnalytics\$(ORE)\OREAnalytics\orea\aggregation\collateralaccount.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\aggregation\collatexposurehelper.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\aggregation\cvaspreadsensitivitycalculator.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\aggregation\dimcalculator.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\aggregation\dimregressioncalculator.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\aggregation\dynamiccreditxvacalculator.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\aggregation\exposureallocator.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\aggregation\exposurecalculator.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\aggregation\nettedexposurecalculator.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\aggregation\postprocess.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\aggregation\staticcreditxvacalculator.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\aggregation\xvacalculator.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\app\analytic.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\app\analyticsmanager.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\app\inputparameters.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\app\marketcalibrationreport.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\app\marketdatacsvloader.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\app\marketdatainmemoryloader.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\app\marketdataloader.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\app\oreapp.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\app\parameters.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\app\reportwriter.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\app\sensitivityrunner.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\app\structuredanalyticserror.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\app\structuredanalyticswarning.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\app\xvarunner.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\auto_link.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\cube\cubecsvreader.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\cube\cubeinterpretation.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\cube\cubewriter.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\cube\cube_io.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\cube\inmemorycube.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\cube\jaggedcube.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\cube\jointnpvcube.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\cube\jointnpvsensicube.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\cube\npvcube.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\cube\npvsensicube.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\cube\sensicube.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\cube\sensitivitycube.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\cube\sparsenpvcube.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\engine\amcvaluationengine.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\engine\bufferedsensitivitystream.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\engine\cptycalculator.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\engine\filteredsensitivitystream.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\engine\historicalpnlgenerator.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\engine\historicalsensipnlcalculator.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\engine\mporcalculator.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\engine\multithreadedvaluationengine.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\engine\npvrecord.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\engine\observationmode.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\engine\parametricvar.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\engine\parsensitivityanalysis.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\engine\parsensitivitycubestream.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\engine\riskfilter.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\engine\sensitivityaggregator.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\engine\sensitivityanalysis.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\engine\sensitivityanalysisplus.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\engine\sensitivitycubestream.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\engine\sensitivityfilestream.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\engine\sensitivityinmemorystream.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\engine\sensitivitystream.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\engine\sensitivityrecord.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\engine\stresstest.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\engine\valuationcalculator.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\engine\valuationengine.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\engine\zerotoparcube.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\orea.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\aggregationscenariodata.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\clonedscenariogenerator.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\clonescenariofactory.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\crossassetmodelscenariogenerator.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\csvscenariogenerator.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\deltascenario.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\deltascenariofactory.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\historicalscenariofilereader.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\historicalscenariogenerator.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\historicalscenarioloader.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\historicalscenarioreader.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\lgmscenariogenerator.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\scenario.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\scenariofactory.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\scenariofilter.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\scenariogenerator.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\scenariogeneratorbuilder.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\scenariogeneratordata.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\scenarioshiftcalculator.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\scenariosimmarket.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\scenariosimmarketparameters.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\scenariosimmarketplus.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\scenariowriter.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\sensitivityscenariodata.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\sensitivityscenariogenerator.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\shiftscenariogenerator.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\simplescenario.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\simplescenariofactory.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\stressscenariodata.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\scenario\stressscenariogenerator.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\simulation\fixingmanager.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\simulation\simmarket.hpp" />
+    <ClInclude Include="$(ORE)\OREAnalytics\orea\version.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\aggregation\collateralaccount.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\aggregation\collatexposurehelper.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\aggregation\cvaspreadsensitivitycalculator.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\aggregation\dimcalculator.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\aggregation\dimregressioncalculator.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\aggregation\dynamiccreditxvacalculator.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\aggregation\exposureallocator.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\aggregation\exposurecalculator.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\aggregation\nettedexposurecalculator.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\aggregation\postprocess.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\aggregation\staticcreditxvacalculator.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\aggregation\xvacalculator.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\app\analytic.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\app\analyticsmanager.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\app\inputparameters.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\app\marketcalibrationreport.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\app\marketdatacsvloader.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\app\marketdatainmemoryloader.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\app\marketdataloader.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\app\oreapp.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\app\parameters.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\app\reportwriter.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\app\sensitivityrunner.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\app\xvarunner.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\cube\cubecsvreader.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\cube\cubeinterpretation.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\cube\cubewriter.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\cube\cube_io.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\cube\jointnpvcube.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\cube\jointnpvsensicube.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\cube\sensitivitycube.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\cube\sparsenpvcube.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\engine\amcvaluationengine.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\engine\bufferedsensitivitystream.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\engine\cptycalculator.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\engine\filteredsensitivitystream.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\engine\historicalpnlgenerator.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\engine\historicalsensipnlcalculator.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\engine\mporcalculator.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\engine\multithreadedvaluationengine.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\engine\npvrecord.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\engine\parametricvar.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\engine\parsensitivityanalysis.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\engine\parsensitivitycubestream.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\engine\riskfilter.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\engine\sensitivityaggregator.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\engine\sensitivityanalysis.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\engine\sensitivityanalysisplus.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\engine\sensitivitycubestream.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\engine\sensitivityfilestream.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\engine\sensitivityinmemorystream.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\engine\sensitivityrecord.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\engine\stresstest.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\engine\valuationcalculator.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\engine\valuationengine.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\engine\zerotoparcube.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\scenario\clonedscenariogenerator.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\scenario\clonescenariofactory.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\scenario\crossassetmodelscenariogenerator.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\scenario\csvscenariogenerator.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\scenario\deltascenario.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\scenario\deltascenariofactory.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\scenario\historicalscenariofilereader.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\scenario\historicalscenariogenerator.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\scenario\historicalscenarioloader.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\scenario\lgmscenariogenerator.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\scenario\scenario.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\scenario\scenariogeneratorbuilder.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\scenario\scenariogeneratordata.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\scenario\scenarioshiftcalculator.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\scenario\scenariosimmarket.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\scenario\scenariosimmarketparameters.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\scenario\scenariosimmarketplus.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\scenario\scenariowriter.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\scenario\sensitivityscenariodata.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\scenario\sensitivityscenariogenerator.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\scenario\shiftscenariogenerator.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\scenario\simplescenario.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\scenario\stressscenariodata.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\scenario\stressscenariogenerator.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\simulation\fixingmanager.cpp" />
+    <ClCompile Include="$(ORE)\OREAnalytics\orea\simulation\simmarket.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>OREAnalytics</ProjectName>
+    <ProjectGuid>{69B19B76-A089-4F8E-A10B-58F607A96214}</ProjectGuid>
+    <RootNamespace>OREAnalytics</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="ore.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (static runtime)|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (static runtime)|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (static runtime)|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (static runtime)|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug (static runtime)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ore.Win32.user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug (static runtime)|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ore.x64.user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release (static runtime)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ore.Win32.user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release (static runtime)|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ore.x64.user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ore.Win32.user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ore.x64.user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ore.Win32.user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ore.x64.user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ORE)\OREAnalytics\lib\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ORE)\OREAnalytics\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ORE)\OREAnalytics\build\$(PlatformToolset)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ORE)\OREAnalytics\build\$(PlatformToolset)\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ORE)\OREAnalytics\lib\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ORE)\OREAnalytics\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ORE)\OREAnalytics\build\$(PlatformToolset)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ORE)\OREAnalytics\build\$(PlatformToolset)\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release (static runtime)|Win32'">$(ORE)\OREAnalytics\lib\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release (static runtime)|x64'">$(ORE)\OREAnalytics\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release (static runtime)|Win32'">$(ORE)\OREAnalytics\build\$(PlatformToolset)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release (static runtime)|x64'">$(ORE)\OREAnalytics\build\$(PlatformToolset)\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug (static runtime)|Win32'">$(ORE)\OREAnalytics\lib\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug (static runtime)|x64'">$(ORE)\OREAnalytics\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug (static runtime)|Win32'">$(ORE)\OREAnalytics\build\$(PlatformToolset)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug (static runtime)|x64'">$(ORE)\OREAnalytics\build\$(PlatformToolset)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug (static runtime)|Win32'">OREAnalytics-mt-sgd</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug (static runtime)|x64'">OREAnalytics-x64-mt-sgd</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OREAnalytics-mt-gd</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OREAnalytics-x64-mt-gd</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release (static runtime)|Win32'">OREAnalytics-mt-s</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release (static runtime)|x64'">OREAnalytics-x64-mt-s</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OREAnalytics-mt</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OREAnalytics-x64-mt</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(ORE)\OREAnalytics;$(ORE)\OREData;$(ORE)\OREAnalytics;$(ORE)\QuantExtPlus;$(ORE)\QuantExt;$(ORE)\QuantLib;$(ORE)\ThirdPartyLibs\rapidxml-1.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_LIB;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(ORE)\OREAnalytics\build\$(PlatformToolset)\$(Platform)\$(Configuration)\OREAnalytics.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)\%(Directory)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)\%(Directory)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)\%(Directory)</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <BrowseInformationFile>$(ORE)\OREAnalytics\build\$(PlatformToolset)\$(Platform)\$(Configuration)\</BrowseInformationFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <PreLinkEvent>
+      <Message>Make build directory</Message>
+      <Command>if not exist lib mkdir lib</Command>
+    </PreLinkEvent>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(ORE)\OREAnalytics;$(ORE)\OREData;$(ORE)\QuantExt;$(ORE)\QuantLib;$(ORE)\ThirdPartyLibs\rapidxml-1.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_LIB;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(ORE)\OREAnalytics\build\$(PlatformToolset)\$(Platform)\$(Configuration)\OREAnalytics.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)\%(Directory)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)\%(Directory)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)\%(Directory)</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <BrowseInformationFile>$(ORE)\OREAnalytics\build\$(PlatformToolset)\$(Platform)\$(Configuration)\</BrowseInformationFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <PreLinkEvent>
+      <Message>Make build directory</Message>
+      <Command>if not exist lib mkdir lib</Command>
+    </PreLinkEvent>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ORE)\OREAnalytics;$(ORE)\OREData;$(ORE)\OREAnalytics;$(ORE)\QuantExtPlus;$(ORE)\QuantExt;$(ORE)\QuantLib;$(ORE)\ThirdPartyLibs\rapidxml-1.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_LIB;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(ORE)\OREAnalytics\build\$(PlatformToolset)\$(Platform)\$(Configuration)\OREAnalytics.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)\%(Directory)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)\%(Directory)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)\%(Directory)</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <BrowseInformationFile>$(ORE)\OREAnalytics\build\$(PlatformToolset)\$(Platform)\$(Configuration)\</BrowseInformationFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <PreLinkEvent>
+      <Message>Make build directory</Message>
+      <Command>if not exist lib mkdir lib</Command>
+    </PreLinkEvent>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ORE)\OREAnalytics;$(ORE)\OREData;$(ORE)\OREAnalytics;$(ORE)\QuantExtPlus;$(ORE)\QuantExt;$(ORE)\QuantLib;$(ORE)\ThirdPartyLibs\rapidxml-1.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_LIB;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(ORE)\OREAnalytics\build\$(PlatformToolset)\$(Platform)\$(Configuration)\OREAnalytics.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)\%(Directory)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)\%(Directory)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)\%(Directory)</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <BrowseInformationFile>$(ORE)\OREAnalytics\build\$(PlatformToolset)\$(Platform)\$(Configuration)\</BrowseInformationFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <PreLinkEvent>
+      <Message>Make build directory</Message>
+      <Command>if not exist lib mkdir lib</Command>
+    </PreLinkEvent>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release (static runtime)|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(ORE)\OREAnalytics;$(ORE)\OREData;$(ORE)\OREAnalytics;$(ORE)\QuantExtPlus;$(ORE)\QuantExt;$(ORE)\QuantLib;$(ORE)\ThirdPartyLibs\rapidxml-1.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_LIB;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(ORE)\OREAnalytics\build\$(PlatformToolset)\$(Platform)\$(Configuration)\OREAnalytics.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)\%(Directory)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)\%(Directory)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)\%(Directory)</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <BrowseInformationFile>$(ORE)\OREAnalytics\build\$(PlatformToolset)\$(Platform)\$(Configuration)\</BrowseInformationFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <PreLinkEvent>
+      <Message>Make build directory</Message>
+      <Command>if not exist lib mkdir lib</Command>
+    </PreLinkEvent>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release (static runtime)|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(ORE)\OREAnalytics;$(ORE)\OREData;$(ORE)\OREAnalytics;$(ORE)\QuantExtPlus;$(ORE)\QuantExt;$(ORE)\QuantLib;$(ORE)\ThirdPartyLibs\rapidxml-1.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_LIB;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(ORE)\OREAnalytics\build\$(PlatformToolset)\$(Platform)\$(Configuration)\OREAnalytics.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)\%(Directory)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)\%(Directory)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)\%(Directory)</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <BrowseInformationFile>$(ORE)\OREAnalytics\build\$(PlatformToolset)\$(Platform)\$(Configuration)\</BrowseInformationFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <PreLinkEvent>
+      <Message>Make build directory</Message>
+      <Command>if not exist lib mkdir lib</Command>
+    </PreLinkEvent>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug (static runtime)|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ORE)\OREAnalytics;$(ORE)\OREData;$(ORE)\OREAnalytics;$(ORE)\QuantExtPlus;$(ORE)\QuantExt;$(ORE)\QuantLib;$(ORE)\ThirdPartyLibs\rapidxml-1.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_LIB;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(ORE)\OREAnalytics\build\$(PlatformToolset)\$(Platform)\$(Configuration)\OREAnalytics.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)\%(Directory)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)\%(Directory)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)\%(Directory)</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <BrowseInformationFile>$(ORE)\OREAnalytics\build\$(PlatformToolset)\$(Platform)\$(Configuration)\</BrowseInformationFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <PreLinkEvent>
+      <Message>Make build directory</Message>
+      <Command>if not exist lib mkdir lib</Command>
+    </PreLinkEvent>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug (static runtime)|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ORE)\OREAnalytics;$(ORE)\OREData;$(ORE)\OREAnalytics;$(ORE)\QuantExtPlus;$(ORE)\QuantExt;$(ORE)\QuantLib;$(ORE)\ThirdPartyLibs\rapidxml-1.13;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_LIB;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(ORE)\OREAnalytics\build\$(PlatformToolset)\$(Platform)\$(Configuration)\OREAnalytics.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)\%(Directory)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)\%(Directory)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)\%(Directory)</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <BrowseInformationFile>$(ORE)\OREAnalytics\build\$(PlatformToolset)\$(Platform)\$(Configuration)\</BrowseInformationFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <PreLinkEvent>
+      <Message>Make build directory</Message>
+      <Command>if not exist lib mkdir lib</Command>
+    </PreLinkEvent>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="aggregation">
+      <UniqueIdentifier>{2b3ebb91-04dc-4730-b9f4-d58e8ad33dc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cube">
+      <UniqueIdentifier>{f480d315-bc77-420e-93c2-97fcf3d81e68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine">
+      <UniqueIdentifier>{027178c8-a4c4-403e-8b5d-c9b4a7ceddcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scenario">
+      <UniqueIdentifier>{c12e5068-5327-45b3-9240-e649620fc89c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="simulation">
+      <UniqueIdentifier>{6dfd1b9a-8b1b-4cd1-92a5-96a4fd83bf6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app">
+      <UniqueIdentifier>{5e2b1c12-06b6-468c-b52b-f2937bc8facc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+<IncludeFileTemplate>
+  </ItemGroup>
+</Project>
