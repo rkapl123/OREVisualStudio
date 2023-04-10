@@ -641,4 +641,7 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <PropertyGroup>
+    <LocalDebuggerWorkingDirectory>$(ORE)\OREData\test\bin</LocalDebuggerWorkingDirectory>
+  </PropertyGroup>
 </Project>
