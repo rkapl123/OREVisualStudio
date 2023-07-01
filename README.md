@@ -6,9 +6,15 @@ In case of new releases the new/changed source files can and will be recreated i
 from project and filter templates in folder templates/ using the information from the CmakeLists in ORE's source tree.
 
 Most important before starting the solution is to set the environment variable ORE to the folder of your ORE's Engine source root folder.
-Also set the BOOST, BOOST_LIB32 and BOOST_LIB64 environment variables accordingly, or modifiy the files ore.x64.user.props, 
+Also set the BOOST, BOOST_LIB32 and BOOST_LIB64 environment variables accordingly, or modify the files ore.x64.user.props, 
 quantlib.Win32.user.props, quantlib.x64.user.props and ore.Win32.user.props accordingly.
 
 In order to update the source files from the newest ORE source, invoke the powershell script recreateProjectFiles.ps1 which takes the CmakeLists
-from the ORE source (having the Quantlib subproject already updated) as defined by the ORE environment variable (you have to set this before or start runRecreateProjectFiles.cmd) 
+from the ORE source (having the QuantLib subproject already updated) as defined by the ORE environment variable (you have to set this before or start runRecreateProjectFiles.cmd) 
 and inserts these into the templates in the templates folder, recreating the project and filters files.
+
+## Tips for building ORE
+
+First, it is important to retrieve the QuantLib compatible with the chosen ORE version (e.g. 1.8.10), the safest way is NOT to pull the current master but rather to switch to the corresponding tag in the branch/tag switch (e.g. v.1.8.10.0), then download the zip with the <> code download button, next go to the QuantLib version that this ORE Version was built with on the external submodule link (e.g. QuantLib @ c235cda) and download the zip with the <> code download button there as well. The last step is to integrate the downloaded QuantLib source into the ORE source tree (QuantLib folder).
+
+Another challenge is to get the correct boost binary for the Visual Studio version (from https://sourceforge.net/projects/boost/files/boost-binaries/), to find the appropriate toolset version compatible with visual studio a good reference is https://en.wikipedia.org/wiki/Microsoft_Visual_C%2B%2B#Internal_version_numbering, the runtime library version is in the last column, the toolset version (as needed by the linker looking up the libraries) can be obtained by taking the first three digits of the runtime library version and dropping the decimal, e.g. '143'.
