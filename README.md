@@ -10,4 +10,5 @@ Also set the BOOST, BOOST_LIB32 and BOOST_LIB64 environment variables accordingl
 quantlib.Win32.user.props, quantlib.x64.user.props and ore.Win32.user.props accordingly.
 
 In order to update the source files from the newest ORE source, invoke the powershell script recreateProjectFiles.ps1 which takes the CmakeLists
-from the respective ORE source folders and inserts these into the templates in the templates folder, recreating the project and filters files.
+from the ORE source (having the Quantlib subproject already updated) as defined by the ORE environment variable (you have to set this before or start runRecreateProjectFiles.cmd) 
+and inserts these into the templates in the templates folder, recreating the project and filters files.
