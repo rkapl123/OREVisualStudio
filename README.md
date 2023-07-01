@@ -19,13 +19,14 @@ First, it is important to retrieve the QuantLib compatible with the chosen ORE v
 
 If you rather like to check out directly from the source, then following git commands might be sufficient:
 
-`git clone https://github.com/opensourcerisk/engine.git oredir
+```git clone https://github.com/opensourcerisk/engine.git oredir
 cd oredir
 git checkout tags/v1.8.10.0
 git submodule init
 git submodule update
 cd QuantLib
-git checkout c235cdabbb34beaae601700092b9abfefdd7fc6a`
+git checkout c235cdabbb34beaae601700092b9abfefdd7fc6a
+```
 
 The commit on the last line for the QuantLib submodule could either be communicated along with the release or can always be found on the git code page when having selected the release tag in the branch/tag switch.
 
